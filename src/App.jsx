@@ -2,7 +2,7 @@ import "./App.css";
 import { useState, useEffect, useRef } from "react";
 import { user } from "./lib/data";
 
-function App() {
+export function App() {
   // Buat ref, agar ketika render pertama kali, input username akan focus
   const ref = useRef(null);
   const [username, setUsername] = useState("");
@@ -76,5 +76,3 @@ function submitForm(username, password) {
     }, 1500);
   });
 }
-
-export default App;
